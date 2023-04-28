@@ -52,6 +52,7 @@ const GamesSection = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          arrows: false,
         },
       },
     ],
@@ -81,5 +82,6 @@ const GamesSection = () => {
     </section>
   );
 };
+
 
 export default GamesSection;
