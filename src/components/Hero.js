@@ -67,7 +67,7 @@ const Hero = () => {
             <div className="absolute top-1/2 left-5 transform -translate-y-1/2 rounded-md">
                 <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6" style={{ backgroundClip: 'text', WebkitBackgroundClip: 'text', color: 'transparent', WebkitTextFillColor: 'transparent', backgroundImage: 'linear-gradient(to top, #EAEAEA, #ffffff)' }}>{title}</h1>
                 <p className="text-white text-xl md:text-2xl lg:text-3xl">{text}</p>
-                <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded mt-4">
+                <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full mt-4 transition duration-300 ease-in-out">
                     Play for free
                 </button>
             </div>
