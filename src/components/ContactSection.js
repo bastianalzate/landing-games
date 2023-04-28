@@ -75,10 +75,11 @@ const ContactSection = () => {
           <div className="flex justify-center md:justify-start mt-6 md:mt-8">
             <button
               type="submit"
-              className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition duration-300 ease-in-out"
+              className="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition duration-300 ease-in-out"
             >
               Enviar
             </button>
+            
           </div>
         </form>
       </div>
