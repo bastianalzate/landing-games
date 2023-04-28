@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import GamesSection from "@/components/GameSection";
 import AboutSection from "@/components/AboutSection";
 import NewsSection from "@/components/NewsSection";
+import DownloadSection from "@/components/DownloadSection";
 
 export default function Landing() {
     return (
@@ -12,7 +13,8 @@ export default function Landing() {
             <Hero />
             <GamesSection />
             <AboutSection />
-            <NewsSection />
+            {/* <NewsSection /> */}
+            <DownloadSection />
         </>
     )
 }
