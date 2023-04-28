@@ -7,6 +7,7 @@ import NewsSection from "@/components/NewsSection";
 import DownloadSection from "@/components/DownloadSection";
 import ContactSection from "@/components/ContactSection";
 import MapSection from "@/components/MapSection";
+import Footer from "@/components/Footer";
 
 export default function Landing() {
     return (
@@ -19,6 +20,7 @@ export default function Landing() {
             <DownloadSection />
             <ContactSection />
             <MapSection />
+            <Footer />
         </>
     )
 }
