@@ -30,28 +30,15 @@ const Hero = () => {
         setIsHovered(false);
     };
 
-    const prevSlide = () => {
-        const newIndex = activeIndex === 0 ? slides.length - 1 : activeIndex - 1;
-        setActiveIndex(newIndex);
-    };
-
-    const nextSlide = () => {
-        const newIndex = activeIndex === slides.length - 1 ? 0 : activeIndex + 1;
-        setActiveIndex(newIndex);
-    };
-
     useEffect(() => {
         const intervalId = setInterval(() => {
-            nextSlide();
+            const newIndex = activeIndex === slides.length - 1 ? 0 : activeIndex + 1;
+            setActiveIndex(newIndex);
         }, 4000);
         return () => clearInterval(intervalId);
     }, [activeIndex]);
 
-
-
     const { imageUrl, title, text } = slides[activeIndex];
-
- 
 
     return (
         <div className="relative h-screen w-full overflow-hidden" style={{ height: 'calc(100vh - 80px)' }}>
@@ -77,11 +64,13 @@ const Hero = () => {
                     ></div>
                 </div>
             ))}
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black bg-opacity-70 p-10 rounded-md">
-                <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-bold mb-6">{title}</h1>
+            <div className="absolute top-1/2 left-5 transform -translate-y-1/2 rounded-md">
+                <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6" style={{ backgroundClip: 'text', WebkitBackgroundClip: 'text', color: 'transparent', WebkitTextFillColor: 'transparent', backgroundImage: 'linear-gradient(to top, #EAEAEA, #ffffff)' }}>{title}</h1>
                 <p className="text-white text-xl md:text-2xl lg:text-3xl">{text}</p>
+                <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded mt-4">
+                    Play for free
+                </button>
             </div>
-
             <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
                 {slides.map((_, index) => (
                     <div
@@ -92,20 +81,9 @@ const Hero = () => {
                     ></div>
                 ))}
             </div>
-            <button
-                className="absolute top-1/2 left-2 md:left-4 transform -translate-y-1/2 z-10 text-white font-bold text-xl md:text-2xl lg:text-3xl"
-                onClick={prevSlide}
-            >
-                {'<'}
-            </button>
-            <button
-                className="absolute top-1/2 right-2 md:right-4 transform -translate-y-1/2 z-10 text-white font-bold text-xl md:text-2xl lg:text-3xl"
-                onClick={nextSlide}
-            >
-                {'>'}
-            </button>
         </div>
     );
 };
 
 export default Hero;
+
