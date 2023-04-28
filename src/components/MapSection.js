@@ -30,12 +30,12 @@ const LeafletMap = () => {
       new L.Icon({
         iconUrl: '/marker-icon.png',
         iconRetinaUrl: '/marker-icon.png',
-        iconAnchor: [60, 60],
+        iconAnchor: [20, 20],
         popupAnchor: [-3, -76],
         shadowUrl: null,
         shadowSize: null,
         shadowAnchor: null,
-        iconSize: [60, 90],
+        iconSize: [40, 40],
         // className: 'leaflet-div-icon'
       })
     );
