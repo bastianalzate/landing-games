@@ -18,7 +18,7 @@ const Navbar = () => {
 
     return (
         <nav className="bg-gray-800 p-5">
-            <div className="md:flex justify-between items-center">
+            <div className="md:flex justify-between items-center w-90 mx-auto">
                 <div className="flex justify-between items-center">
                     <div>
                         <Link className="text-2xl font-bold text-white" href="/">
@@ -54,30 +54,30 @@ const Navbar = () => {
                     </div>
                 </div>
                 <div className="hidden md:flex md:items-center md:space-x-8 md:bg-transparent">
-                    <Link
-                        className="text-white font-bold tracking-wide hover:text-gray-300 px-3 py-2 rounded-md"
-                        href="/games"
+                    <button 
+                        className="text-white font-bold tracking-wide hover:text-gray-300 px-3 py-2 rounded-md w-full text-center transition-all duration-300 ease-in-out"
+                        onClick={() => document.querySelector('#game-section').scrollIntoView({ behavior: 'smooth' })}
                     >
                         Juegos
-                    </Link>
-                    <Link
-                        className="text-white font-bold tracking-wide hover:text-gray-300 px-3 py-2 rounded-md"
-                        href="/about"
+                    </button>
+                    <button 
+                        className="text-white font-bold tracking-wide hover:text-gray-300 px-3 py-2 rounded-md w-full text-center transition-all duration-300 ease-in-out"
+                        onClick={() => document.querySelector('#about-section').scrollIntoView({ behavior: 'smooth' })}
                     >
-                        Acerca de
-                    </Link>
-                    <Link
-                        className="text-white font-bold tracking-wide hover:text-gray-300 px-3 py-2 rounded-md"
-                        href="/download"
+                        Nosotros
+                    </button>
+                    <button 
+                        className="text-white font-bold tracking-wide hover:text-gray-300 px-3 py-2 rounded-md w-full text-center transition-all duration-300 ease-in-out"
+                        onClick={() => document.querySelector('#download-section').scrollIntoView({ behavior: 'smooth' })}
                     >
                         Descargar
-                    </Link>
-                    <Link
-                        className="text-white font-bold tracking-wide hover:text-gray-300 px-3 py-2 rounded-md"
-                        href="/contact"
+                    </button>
+                    <button 
+                        className="text-white font-bold tracking-wide hover:text-gray-300 px-3 py-2 rounded-md w-full text-center transition-all duration-300 ease-in-out"
+                        onClick={() => document.querySelector('#contact-section').scrollIntoView({ behavior: 'smooth' })}
                     >
                         Contacto
-                    </Link>
+                    </button>
                 </div>
                 <div
                     className={`${isOpen ? 'block' : 'hidden'
@@ -85,34 +85,34 @@ const Navbar = () => {
                     style={{ opacity: isOpen ? 1 : 0 }}
                 >
                     <div className="flex flex-col items-center space-y-4">
-                        <Link
-                            className="text-white font-bold tracking-wide hover:text-gray-300 px-3 py-2 rounded-md w-full text-center transition-all duration-300 ease-in-out"
-                            href="/games"
-                            style={{ backgroundColor: 'rgba(0, 0, 0, 0.1)', padding: '0.75rem' }}
-                        >
-                            Juegos
-                        </Link>
-                        <Link
-                            className="text-white font-bold tracking-wide hover:text-gray-300 px-3 py-2 rounded-md w-full text-center transition-all duration-300 ease-in-out"
-                            href="/about"
-                            style={{ backgroundColor: 'rgba(0, 0, 0, 0.1)', padding: '0.75rem' }}
-                        >
-                            Acerca de
-                        </Link>
-                        <Link
-                            className="text-white font-bold tracking-wide hover:text-gray-300 px-3 py-2 rounded-md w-full text-center transition-all duration-300 ease-in-out"
-                            href="/download"
-                            style={{ backgroundColor: 'rgba(0, 0, 0, 0.1)', padding: '0.75rem' }}
-                        >
-                            Descargar
-                        </Link>
-                        <Link
-                            className="text-white font-bold tracking-wide hover:text-gray-300 px-3 py-2 rounded-md w-full text-center transition-all duration-300 ease-in-out"
-                            href="/contact"
-                            style={{ backgroundColor: 'rgba(0, 0, 0, 0.1)', padding: '0.75rem' }}
-                        >
-                            Contacto
-                        </Link>
+                        <button 
+                        className="text-white font-bold tracking-wide hover:text-gray-300 px-3 py-2 rounded-md w-full text-center transition-all duration-300 ease-in-out"
+                        onClick={() => document.querySelector('#game-section').scrollIntoView({ behavior: 'smooth' })}
+                        style={{ backgroundColor: 'rgba(0, 0, 0, 0.1)', padding: '0.75rem' }}
+                    >
+                        Juegos
+                    </button>
+                    <button 
+                        className="text-white font-bold tracking-wide hover:text-gray-300 px-3 py-2 rounded-md w-full text-center transition-all duration-300 ease-in-out"
+                        onClick={() => document.querySelector('#about-section').scrollIntoView({ behavior: 'smooth' })}
+                        style={{ backgroundColor: 'rgba(0, 0, 0, 0.1)', padding: '0.75rem' }}
+                    >
+                        Nosotros
+                    </button>
+                    <button 
+                        className="text-white font-bold tracking-wide hover:text-gray-300 px-3 py-2 rounded-md w-full text-center transition-all duration-300 ease-in-out"
+                        onClick={() => document.querySelector('#download-section').scrollIntoView({ behavior: 'smooth' })}
+                        style={{ backgroundColor: 'rgba(0, 0, 0, 0.1)', padding: '0.75rem' }}
+                    >
+                        Descargar
+                    </button>
+                    <button 
+                        className="text-white font-bold tracking-wide hover:text-gray-300 px-3 py-2 rounded-md w-full text-center transition-all duration-300 ease-in-out"
+                        onClick={() => document.querySelector('#contact-section').scrollIntoView({ behavior: 'smooth' })}
+                        style={{ backgroundColor: 'rgba(0, 0, 0, 0.1)', padding: '0.75rem' }}
+                    >
+                        Contacto
+                    </button>
                     </div>
                 </div>
 

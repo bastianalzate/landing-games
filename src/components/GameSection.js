@@ -18,7 +18,7 @@ const games = [
   },
   {
     id: 3,
-    image: "https://generacionxbox.com/wp-content/uploads/2021/04/epic-games-store-juegos-gratis.jpg",
+    image: "https://i.blogs.es/4c03cc/halo-4/1366_2000.jpeg",
     title: "Halo",
     description: "Un juego de disparos en primera persona desarrollado por Bungie Studios.",
   },
@@ -59,7 +59,7 @@ const GamesSection = () => {
   };
 
   return (
-    <section className="py-20 bg-gray-900">
+    <section id="game-section" className="py-20 bg-gray-900">
       <div className="container mx-auto">
         <h2 className="text-4xl font-bold text-center text-white mb-12">Juegos</h2>
         <Slider {...settings}>
