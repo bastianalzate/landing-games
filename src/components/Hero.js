@@ -61,13 +61,16 @@ const Hero = () => {
                             backgroundPosition: 'center',
                             filter: 'brightness(0.7)',
                         }}
-                    ></div>
+                    >
+                        {/* Aquí es donde se agrega el degradado de negro a transparente */}
+                        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-black to-transparent"></div>
+                    </div>
                 </div>
             ))}
-            <div className="absolute top-1/2 left-5 transform -translate-y-1/2 rounded-md">
-                <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6" style={{ backgroundClip: 'text', WebkitBackgroundClip: 'text', color: 'transparent', WebkitTextFillColor: 'transparent', backgroundImage: 'linear-gradient(to top, #EAEAEA, #ffffff)' }}>{title}</h1>
-                <p className="text-white text-xl md:text-2xl lg:text-3xl">{text}</p>
-                <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full mt-4 transition duration-300 ease-in-out">
+            <div className="absolute top-80 left-1/2 transform -translate-x-1/2 rounded-md max-w-1400 mx-auto w-90">
+                <h1 className="py-4 text-6xl md:text-7xl lg:text-8xl font-bold mb-6" style={{ backgroundClip: 'text',WebkitBackgroundClip: 'text', color: 'transparent', WebkitTextFillColor: 'transparent', backgroundImage: 'linear-gradient(to top, #EAEAEA, #ffffff)' }}>{title}</h1>
+                <p className="text-gray-300 text-xl md:text-1xl lg:text-2xl">{text}</p>
+                <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-full mt-10 transition duration-300 ease-in-out">
                     Play for free
                 </button>
             </div>
