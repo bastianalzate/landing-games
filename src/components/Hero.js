@@ -67,7 +67,7 @@ const Hero = () => {
                     </div>
                 </div>
             ))}
-            <div className="absolute top-80 left-1/2 transform -translate-x-1/2 rounded-md max-w-1400 mx-auto w-90">
+            <div className="absolute top-10 md:top-80 left-1/2 transform -translate-x-1/2 rounded-md max-w-1400 mx-auto w-90">
                 <h1 className="py-4 text-6xl md:text-7xl lg:text-8xl font-bold mb-6" style={{ backgroundClip: 'text',WebkitBackgroundClip: 'text', color: 'transparent', WebkitTextFillColor: 'transparent', backgroundImage: 'linear-gradient(to top, #EAEAEA, #ffffff)' }}>{title}</h1>
                 <p className="text-gray-300 text-xl md:text-1xl lg:text-2xl">{text}</p>
                 <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-full mt-10 transition duration-300 ease-in-out">
