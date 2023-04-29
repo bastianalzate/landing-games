@@ -47,7 +47,10 @@ const AboutSection = () => {
             <p className="text-gray-600 mb-6">
               Si tienes alguna pregunta o comentario sobre nuestra plataforma o nuestros juegos, no dudes en contactarnos.
             </p>
-            <button className="bg-blue-500 text-white py-2 px-4 rounded-full hover:bg-blue-400 transition duration-300 ease-in-out">
+            <button 
+              className="bg-blue-500 text-white py-2 px-4 rounded-full hover:bg-blue-400 transition duration-300 ease-in-out"
+              onClick={() => document.querySelector('#contact-section').scrollIntoView({ behavior: 'smooth' })}  
+            >
               Contáctanos
             </button>
           </div>
