@@ -22,7 +22,7 @@ const Navbar = () => {
                 <div className="flex justify-between items-center">
                     <div>
                         <Link className="text-2xl font-bold text-white" href="/">
-                            VideoJuegos
+                            VIDEOJUEGOS
                         </Link>
                     </div>
                     <div className="md:hidden">
