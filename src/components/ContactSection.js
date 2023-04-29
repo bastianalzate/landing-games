@@ -17,7 +17,7 @@ const ContactSection = () => {
       <div className="max-w-screen-lg mx-auto px-4">
         <h2 className="text-3xl font-bold text-white mb-6 md:mb-8">Contáctanos</h2>
         <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="flex flex-col">
+          <div className="flex flex-col col-span-2 md:col-span-1">
             <label htmlFor="name" className="block text-gray-300 font-medium mb-2">
               Nombre
             </label>
@@ -31,7 +31,7 @@ const ContactSection = () => {
               onChange={(e) => setName(e.target.value)}
             />
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col col-span-2 md:col-span-1">
             <label htmlFor="email" className="block text-gray-300 font-medium mb-2">
               Correo electrónico
             </label>
