@@ -12,8 +12,8 @@ const Footer = () => {
 
   return (
     <footer className="bg-gray-900 text-white pt-8">
-      <div className="w-90 mx-auto">
-        <div className="flex flex-col md:flex-row justify-between items-center px-4 sm:px-6 lg:px-8 py-5">
+      <div className="w-100 mx-auto">
+        <div className="w-90 mx-auto flex flex-col md:flex-row justify-between items-center px-4 sm:px-6 lg:px-8 py-5">
           <div className="flex items-center justify-center md:justify-start space-x-4">
             <h2 className="text-2xl font-bold">VideoJuegos</h2>
           </div>
