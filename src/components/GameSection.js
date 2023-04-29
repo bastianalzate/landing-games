@@ -68,7 +68,7 @@ const GamesSection = () => {
               <div className="bg-gray-800 rounded-lg shadow-md overflow-hidden">
                 <img src={game.image} alt={game.title} className="w-full h-48 object-cover" />
                 <div className="p-4">
-                  <h3 className="text-xl font-bold mb-2">{game.title}</h3>
+                  <h3 className="text-xl text-white font-bold mb-2">{game.title}</h3>
                   <p className="text-gray-400">{game.description}</p>
                   <button className="bg-gray-700 text-white py-2 px-4 mt-4 rounded-full hover:bg-gray-600 transition duration-300 ease-in-out">
                     Jugar
