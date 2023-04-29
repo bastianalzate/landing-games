@@ -15,7 +15,7 @@ const Footer = () => {
       <div className="w-100 mx-auto">
         <div className="w-90 max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between items-center px-4 sm:px-6 lg:px-8 py-5">
           <div className="flex items-center justify-center md:justify-start space-x-4">
-            <h2 className="text-2xl font-bold">VideoJuegos</h2>
+            <h2 className="text-2xl font-bold">VIDEOJUEGOS</h2>
           </div>
           <div className="mt-4 md:mt-0 flex items-center justify-center md:justify-end space-x-8">
             <a href="#" className="text-gray-400 hover:text-white">
@@ -35,7 +35,7 @@ const Footer = () => {
         <div className="bg-gray-800 text-gray-400 py-4 mt-4">
           <div className="w-90 max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-between">
-              <p className="text-sm">&copy; 2023 VideoJuegos Todos los derechos reservados.</p>
+              <p className="text-sm">&copy; 2023 VIDEOJUEGOS Todos los derechos reservados.</p>
               <button onClick={handleScrollTop} className="bg-gray-600 hover:bg-gray-700 text-white py-2 px-4 rounded transition-colors duration-300 ease-in-out flex items-center">
                 <RiArrowUpSLine className="text-lg mr-2 animate-bounce" />
                 Volver arriba
