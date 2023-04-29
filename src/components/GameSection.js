@@ -18,7 +18,7 @@ const games = [
   },
   {
     id: 3,
-    image: "https://generacionxbox.com/wp-content/uploads/2021/04/epic-games-store-juegos-gratis.jpg",
+    image: "https://i.blogs.es/4c03cc/halo-4/1366_2000.jpeg",
     title: "Halo",
     description: "Un juego de disparos en primera persona desarrollado por Bungie Studios.",
   },
