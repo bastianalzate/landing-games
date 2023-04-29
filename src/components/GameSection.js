@@ -59,7 +59,7 @@ const GamesSection = () => {
   };
 
   return (
-    <section className="py-20 bg-gray-900">
+    <section id="game-section" className="py-20 bg-gray-900">
       <div className="container mx-auto">
         <h2 className="text-4xl font-bold text-center text-white mb-12">Juegos</h2>
         <Slider {...settings}>

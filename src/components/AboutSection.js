@@ -3,9 +3,9 @@ import { FaCheckCircle } from "react-icons/fa";
 
 const AboutSection = () => {
   return (
-    <section className="py-8 md:py-20 bg-gray-100">
+    <section id="about-section" className="py-8 md:py-20 bg-gray-100">
       <div className="container mx-auto px-4 md:px-0">
-        <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">Acerca de</h2>
+        <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">Nosotros</h2>
         <div className="flex flex-wrap items-center -mx-4">
           <div className="w-full md:w-1/2 px-4 mb-8 md:mb-0">
             <h3 className="text-xl font-bold mb-4 text-gray-600">Nuestra Misión</h3>
